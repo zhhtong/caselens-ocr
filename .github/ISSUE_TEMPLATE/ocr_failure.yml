@@ -1,0 +1,74 @@
+name: OCR or layout failure
+description: Report a reproducible recognition or page-layout problem using safe sample data
+title: "[OCR]: "
+labels:
+  - ocr
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use a minimal synthetic or demonstrably de-identified example. Never attach a real patient record or confidential document.
+  - type: input
+    id: document-type
+    attributes:
+      label: Document type
+      placeholder: Synthetic laboratory report, pathology-style table, discharge-summary layout
+    validations:
+      required: true
+  - type: dropdown
+    id: text-layer
+    attributes:
+      label: Does the PDF contain a selectable text layer?
+      options:
+        - Yes
+        - No, it is scanned or image-only
+        - Unsure
+    validations:
+      required: true
+  - type: dropdown
+    id: layout
+    attributes:
+      label: Affected page layout
+      options:
+        - Single-column text
+        - Multi-column text
+        - Table or form
+        - Rotated page
+        - Low-quality scan
+        - Handwriting
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected-text
+    attributes:
+      label: Expected text or reading order
+      description: Provide only synthetic or safely de-identified text.
+    validations:
+      required: true
+  - type: textarea
+    id: actual-text
+    attributes:
+      label: Actual OCR output
+      description: Remove any sensitive content before pasting.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include the CaseLens version, page number, and settings needed to reproduce the failure.
+    validations:
+      required: true
+  - type: textarea
+    id: safe-sample
+    attributes:
+      label: Optional safe sample
+      description: Link to or attach only a minimal synthetic or demonstrably de-identified file.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I confirm all text, screenshots, and files in this report are synthetic or demonstrably de-identified and contain no confidential information.
+          required: true

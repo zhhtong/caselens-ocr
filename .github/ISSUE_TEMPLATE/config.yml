@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security and sensitive-data reporting
+    url: https://github.com/zhhtong/caselens-ocr/blob/main/SECURITY.md
+    about: Read this before reporting a vulnerability or any issue involving sensitive information.
+  - name: Contribution guide
+    url: https://github.com/zhhtong/caselens-ocr/blob/main/CONTRIBUTING.md
+    about: Development setup, test commands, and privacy requirements for contributions.

@@ -1,0 +1,50 @@
+name: Feature request
+description: Suggest an improvement tied to a concrete OCR or review workflow
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the workflow and desired outcome rather than assuming a particular implementation.
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow or problem
+      description: What are you trying to accomplish, and where does the current workflow break down?
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround
+      description: How do you handle this today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What observable result would make the workflow better?
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Primary user group
+      options:
+        - Pharmaceutical or CRO team
+        - Clinical-research team
+        - Medical-affairs team
+        - OCR or Python developer
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy and local-first implications
+      description: Would this change send data outside the local computer, add a service dependency, or change how documents are stored?
+    validations:
+      required: true
