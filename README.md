@@ -78,6 +78,10 @@ docs/                      Design and implementation notes
 
 Useful contributions include OCR failure cases made with synthetic data, vocabulary normalization, page-layout improvements, reproducible bug reports, and documentation fixes. Please read [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
+## Support the project
+
+If CaseLens OCR is useful for your pharmaceutical, CRO, or clinical-research workflow, please consider starring the repository. Stars help other teams discover a privacy-conscious local OCR approach. Feedback on OCR accuracy, document layouts, and synthetic test cases is especially welcome through Issues.
+
 ## License and disclaimer
 
 Code is released under the MIT License. Knowledge files may have separate source or attribution requirements; see [`config/README.md`](config/README.md). This is a research prototype, not a medical device or clinical decision-support system.
