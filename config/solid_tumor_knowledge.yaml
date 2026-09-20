@@ -1,0 +1,70 @@
+# 实体瘤预筛知识库（用于候选字段抽取和人工核对提示，不替代方案/指南原文）
+version: "1.0"
+general:
+  common_trial_fields: [年龄, 性别, 病理确诊, 分期, 转移部位, 可测量病灶, ECOG体能状态, 既往抗肿瘤治疗, 末次治疗日期, 疾病进展, 重要实验室检查, 器官功能, 合并症, 感染, 妊娠, 既往免疫治疗, 既往放疗]
+  common_response_terms: [CR, PR, SD, PD, 完全缓解, 部分缓解, 疾病稳定, 疾病进展, RECIST, iRECIST, mRECIST]
+  common_safety_labs: [血红蛋白, 中性粒细胞, 血小板, 白细胞, 肌酐, 总胆红素, AST, ALT, 白蛋白]
+  common_status_terms: [活动性, 未控制, 既往, 当前, 进行中, 已缓解, 进展, 复发, 转移, 不可切除, 可切除]
+breast:
+  aliases: [乳腺癌, 乳腺恶性肿瘤, 浸润性导管癌, 浸润性小叶癌]
+  histology: [浸润性导管癌, 浸润性小叶癌, 三阴性乳腺癌, HER2阳性乳腺癌]
+  biomarkers: [ER, PR, HER2, Ki-67, PIK3CA, BRCA1, BRCA2, PD-L1]
+  clinical_fields: [绝经状态, 腋窝淋巴结, 乳腺手术史, 新辅助治疗, 辅助治疗, HER2 IHC评分, HER2 ISH/FISH, HR状态]
+  treatment_classes: [化疗, 内分泌治疗, CDK4/6抑制剂, 抗HER2治疗, PARP抑制剂, 免疫治疗, ADC]
+lung:
+  aliases: [肺癌, 非小细胞肺癌, NSCLC, 肺腺癌, 肺鳞癌, 小细胞肺癌, SCLC]
+  histology: [腺癌, 鳞癌, 小细胞癌, 大细胞癌]
+  biomarkers: [EGFR, ALK, ROS1, KRAS, BRAF, MET, RET, NTRK, HER2, PD-L1, STK11, KEAP1]
+  clinical_fields: [吸烟史, 脑转移, 胸膜转移, 驱动基因, PD-L1 TPS, 既往靶向治疗, 既往免疫治疗]
+  treatment_classes: [铂类化疗, 免疫治疗, EGFR靶向, ALK靶向, ROS1靶向, 抗血管治疗]
+colorectal:
+  aliases: [结直肠癌, 结肠癌, 直肠癌, colorectal cancer]
+  biomarkers: [RAS, KRAS, NRAS, BRAF, MSI, dMMR, MMR, HER2, NTRK, POLE]
+  clinical_fields: [原发部位, 左半结肠, 右半结肠, 直肠, 肝转移, 肺转移, MSI-H, RAS状态, BRAF状态]
+  treatment_classes: [氟尿嘧啶类, 奥沙利铂, 伊立替康, 抗EGFR, 抗VEGF, 免疫治疗]
+gastric_esophageal:
+  aliases: [胃癌, 胃恶性肿瘤, 食管癌, 胃食管结合部癌, gastric cancer]
+  histology: [腺癌, 鳞癌]
+  biomarkers: [HER2, PD-L1, CPS, MSI, dMMR, CLDN18.2, FGFR2]
+  clinical_fields: [胃食管结合部, 腹膜转移, HER2 IHC, PD-L1 CPS, MSI状态]
+  treatment_classes: [铂类化疗, 氟尿嘧啶类, 免疫治疗, 抗HER2治疗, 抗VEGFR2]
+liver:
+  aliases: [肝癌, 肝细胞癌, HCC, 肝内胆管癌, 胆管癌]
+  histology: [肝细胞癌, 肝内胆管癌, 胆管癌]
+  biomarkers: [AFP, FGFR2, IDH1, IDH2, BRAF, MSI, NTRK]
+  clinical_fields: [肝硬化, 乙肝, 丙肝, 门静脉癌栓, 肝功能, Child-Pugh, AFP]
+  treatment_classes: [免疫治疗, 抗血管治疗, TKI, 局部消融, TACE, 放疗]
+pancreatic:
+  aliases: [胰腺癌, 胰腺恶性肿瘤, 胰腺导管腺癌, pancreatic cancer]
+  histology: [胰腺导管腺癌, 神经内分泌肿瘤]
+  biomarkers: [BRCA1, BRCA2, PALB2, KRAS, MSI, dMMR, NTRK]
+  clinical_fields: [可切除性, 局部进展, 远处转移, 胆道梗阻, CA19-9, 胰腺手术史]
+  treatment_classes: [含铂化疗, FOLFIRINOX, 吉西他滨, 抗肿瘤治疗]
+ovarian:
+  aliases: [卵巢癌, 卵巢恶性肿瘤, 输卵管癌, 原发性腹膜癌]
+  histology: [高级别浆液性癌, 低级别浆液性癌, 子宫内膜样癌, 透明细胞癌, 黏液性癌]
+  biomarkers: [BRCA1, BRCA2, HRD, HRR, MSI, dMMR, FRα, PD-L1]
+  clinical_fields: [铂敏感, 铂耐药, 腹膜转移, CA125, 腹水, BRCA状态]
+  treatment_classes: [铂类化疗, 紫杉类化疗, PARP抑制剂, 抗血管治疗]
+renal:
+  aliases: [肾癌, 肾细胞癌, RCC, 透明细胞肾癌]
+  histology: [透明细胞肾细胞癌, 乳头状肾细胞癌, 嫌色细胞癌]
+  biomarkers: [PD-L1, VHL, MET, TFE3]
+  clinical_fields: [肾切除史, 肺转移, 骨转移, IMDC风险, 肾功能]
+  treatment_classes: [免疫联合治疗, VEGF-TKI, mTOR抑制剂]
+urothelial:
+  aliases: [尿路上皮癌, 膀胱癌, 肾盂癌, 输尿管癌]
+  biomarkers: [FGFR3, FGFR2, PD-L1, HER2, MSI]
+  clinical_fields: [肌层浸润, 膀胱切除史, 上尿路, 肾功能, PD-L1状态]
+  treatment_classes: [铂类化疗, 免疫治疗, FGFR抑制剂, ADC]
+head_neck:
+  aliases: [头颈部鳞癌, 头颈鳞癌, 鼻咽癌, 口腔癌, 喉癌]
+  histology: [鳞状细胞癌, 鼻咽癌]
+  biomarkers: [HPV, p16, PD-L1 CPS, EBV]
+  clinical_fields: [HPV状态, p16状态, 原发部位, 颈部淋巴结, 吸烟史]
+  treatment_classes: [铂类化疗, 放疗, 免疫治疗, 抗EGFR治疗]
+prostate:
+  aliases: [前列腺癌, 前列腺恶性肿瘤]
+  biomarkers: [AR, BRCA1, BRCA2, HRR, MSI, PSMA]
+  clinical_fields: [PSA, Gleason评分, ISUP分级, 去势敏感, 去势抵抗, 骨转移]
+  treatment_classes: [雄激素剥夺, AR通路抑制, 紫杉类化疗, PARP抑制剂, 放射性配体治疗]

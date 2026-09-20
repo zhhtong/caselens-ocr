@@ -1,0 +1,68 @@
+diseases:
+  - name: 非小细胞肺癌
+    aliases: [肺腺癌, 肺鳞癌, NSCLC, non-small cell lung cancer]
+  - name: 乳腺癌
+    aliases: [乳腺恶性肿瘤, 乳腺浸润性导管癌, 右乳浸润性导管癌, 浸润性导管癌, 乳腺浸润性小叶癌, 三阴性乳腺癌, breast cancer]
+  - name: 胃癌
+    aliases: [胃恶性肿瘤, gastric cancer]
+  - name: 结直肠癌
+    aliases: [结肠癌, 直肠癌, colorectal cancer]
+  - name: 肝癌
+    aliases: [肝细胞癌, HCC]
+  - name: 卵巢癌
+    aliases: [卵巢恶性肿瘤, ovarian cancer]
+  - name: 胰腺癌
+    aliases: [胰腺恶性肿瘤, pancreatic cancer]
+  - name: 头颈部鳞癌
+    aliases: [头颈鳞癌, 头颈部恶性肿瘤]
+biomarkers:
+  - name: EGFR
+    aliases: [EGFR突变, EGFR阳性, L858R, 19外显子缺失]
+  - name: ALK
+    aliases: [ALK融合, ALK阳性]
+  - name: HER2
+    aliases: [HER2阳性, HER2低表达, HER-2, ERBB2]
+  - name: ER
+    aliases: [ER阳性, ER阴性, 雌激素受体, estrogen receptor]
+  - name: PR
+    aliases: [PR阳性, PR阴性, 孕激素受体, progesterone receptor]
+  - name: Ki-67
+    aliases: [Ki67, Ki 67, 增殖指数]
+  - name: PIK3CA
+    aliases: [PIK3CA突变, PIK3CA阳性]
+  - name: BRCA1/2
+    aliases: [BRCA1, BRCA2, BRCA突变]
+  - name: PD-L1
+    aliases: [PDL1, PD-L1表达, CPS, TPS]
+treatments:
+  - name: 奥希替尼
+    aliases: [osimertinib, 泰瑞沙]
+  - name: 铂类化疗
+    aliases: [顺铂, 卡铂, 铂类]
+  - name: 紫杉类化疗
+    aliases: [紫杉醇, 白蛋白紫杉醇, 多西他赛]
+  - name: 内分泌治疗
+    aliases: [阿那曲唑, 来曲唑, 他莫昔芬, 氟维司群]
+  - name: CDK4/6抑制剂
+    aliases: [阿贝西利, 哌柏西利, 瑞波西利]
+  - name: 抗HER2治疗
+    aliases: [曲妥珠单抗, 帕妥珠单抗, 德曲妥珠单抗]
+  - name: 免疫治疗
+    aliases: [帕博利珠单抗, 纳武利尤单抗, 阿替利珠单抗]
+labs:
+  - name: 血小板
+    aliases: [PLT, platelet]
+  - name: 血红蛋白
+    aliases: [Hb, HGB, hemoglobin]
+  - name: 肌酐
+    aliases: [Scr, Cr, serum creatinine]
+  - name: 白细胞
+    aliases: [WBC, white blood cell]
+  - name: 中性粒细胞
+    aliases: [ANC, NEUT, neutrophil]
+  - name: 总胆红素
+    aliases: [TBIL, bilirubin]
+  - name: ALT
+    aliases: [丙氨酸氨基转移酶, 谷丙转氨酶]
+  - name: AST
+    aliases: [天门冬氨酸氨基转移酶, 谷草转氨酶]
