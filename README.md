@@ -32,7 +32,7 @@ CaseLens OCR handles the first step of a pharmaceutical or clinical-research wor
 
 ### Windows EXE
 
-Download the release package, extract it, and double-click `MedicalCaseOCR.exe`. The browser opens at `http://127.0.0.1:8501`. Keep the `models` folder beside the EXE.
+Download [`CaseLensOCR-Windows-v1.0.0.zip`](https://github.com/zhhtong/caselens-ocr/releases/latest), extract it, and double-click `MedicalCaseOCR.exe`. The browser opens at `http://127.0.0.1:8501`. Keep the `models` folder beside the EXE. See the [Windows EXE guide](docs/USING_WINDOWS_EXE.md).
 
 ### Python
 
