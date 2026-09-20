@@ -79,7 +79,7 @@ Use this opening structure and wording:
 ```markdown
 # CaseLens OCR · 病例透镜
 
-**Local-first PDF OCR for Chinese medical and clinical-research documents.**  
+**Local-first PDF OCR for Chinese medical and clinical-research documents.**<br>
 **面向中文医学与临床研究文档的本地优先 PDF OCR 工具。**
 
 [![Tests](https://github.com/zhhtong/caselens-ocr/actions/workflows/tests.yml/badge.svg)](https://github.com/zhhtong/caselens-ocr/actions/workflows/tests.yml)
